@@ -1,17 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>happy-login-widget</title>
-    <meta name="description" content="Lovable Generated Project" />
-    <meta name="author" content="Lovable" />
-    <meta property="og:image" content="/og-image.png" />
-  </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="login-container">
+        <div class="login-form">
+            <!-- Close Button -->
+            <a href="#" class="close-button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="x-icon">
+                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                </svg>
+            </a>
+            
+            <!-- Form Content -->
+            <div class="form-content">
+                <h1>Log In Via Mobile Number</h1>
 
-  <body>
-    <div id="root"></div>
-    <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+                <!-- Country/Region Selector -->
+                <div class="input-group">
+                    <label>Country/Region</label>
+                    <div class="country-select">
+                        <span>United States (+1)</span>
+                    </div>
+                </div>
+
+                <!-- Phone Input -->
+                <div class="input-group">
+                    <label>Phone</label>
+                    <input type="tel" id="phoneInput" placeholder="Enter mobile number">
+                </div>
+
+                <!-- Other Login Options -->
+                <button class="other-options">Other Login Options</button>
+
+                <!-- Verification Notice -->
+                <p class="verification-notice">
+                    The above mobile number is used only for login verification.
+                </p>
+
+                <!-- Continue Button -->
+                <button class="continue-button">Accept and Continue</button>
+
+                <!-- Bottom Links -->
+                <div class="bottom-links">
+                    <a href="#">Unable to Log In?</a>
+                    <a href="#">More Options</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
 </html>
